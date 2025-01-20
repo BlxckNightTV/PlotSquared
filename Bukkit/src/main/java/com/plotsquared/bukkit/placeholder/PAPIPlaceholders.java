@@ -68,7 +68,7 @@ public class PAPIPlaceholders extends PlaceholderExpansion {
         if (identifier.startsWith("has_plot_")) {
             identifier = identifier.substring("has_plot_".length());
             if (identifier.isEmpty()) {
-                return "";
+                return "§cNo Plot found";
             }
 
             return pl.getPlotCount(identifier) > 0 ?
@@ -79,7 +79,7 @@ public class PAPIPlaceholders extends PlaceholderExpansion {
         if (identifier.startsWith("plot_count_")) {
             identifier = identifier.substring("plot_count_".length());
             if (identifier.isEmpty()) {
-                return "";
+                return "§c???";
             }
 
             return String.valueOf(pl.getPlotCount(identifier));
