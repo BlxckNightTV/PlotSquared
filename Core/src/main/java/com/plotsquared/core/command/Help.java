@@ -41,7 +41,7 @@ import java.util.concurrent.CompletableFuture;
         aliases = "?",
         category = CommandCategory.INFO,
         usage = "help [category | #]",
-        permission = "plots.use")
+        permission = "plots.help")
 public class Help extends Command {
 
     public Help(Command parent) {
